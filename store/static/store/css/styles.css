@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	border-box: none;
+}
+
+.home-header-container {
+	background: url("/static/store/media/wood.jpg");
+	background-repeat: none;
+	background: cover;
+	height: 100vw;
+}
+
+.home-header-grid {
+	color: white;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.header-title {
+	font-size: 10vw;
+}
+
+.header-circle {
+	width: 150px;
+	height: 150px;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+
+.header-circle p {
+	text-align: center;
+	padding: 50px;
+}
+
+.home-subheader-grid {
+	color: white;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+
+.subheader-circle h1 {
+	font-size: 10vw;
+	background-color: black;
+}
