@@ -79,3 +79,42 @@
 .restrict {
 	display: none;
 }
+
+.line {
+		border-left: 1px solid white;
+		height: 900px;
+		margin: 0 auto;
+		margin-left: 5%;
+}
+
+/* Goodness grows container */
+.goodness-grows-container {
+	padding: 20px;
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+}
+
+.goodness-grows-container h1 {
+	font-size: 4vw;
+}
+
+.goodness-grows-container p {
+	margin-top: 5%;
+	width: 75%;
+}
+
+.goodness-img {
+	width: 100%;
+	height: auto;
+}
+
+/* index-shop-container */
+.shop-container {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.shop-img:hover {
+	width: 325px;
+}

@@ -12,4 +12,3 @@ window.onload = function() {
 		restrict.style.display = 'block';
   };
 };
-
