@@ -1,7 +1,10 @@
 {% extends 'store/components/base.html' %}
 {% load static %}
 
+{% block title %}Welcome{% endblock %}
+
 {% block content %}
+<!-- Age modal -->
 <div id="myModal" class="modal">
   <div class="bg-dark modal-content">
     <p class="bg-light fs-5 fw-bold">Are you 18 or older?</p>
@@ -11,7 +14,7 @@
   </div>
 </div>
 
-
+<!-- Home Header -->
 <div class="mt-5 home-header-grid">
   <div>
     <h1 class="header-title">Blackstone---</h1>
@@ -30,10 +33,11 @@
   </div>
 </div>
 
+<!-- About -->
 <div class="line">
 
-  <div class="goodness-grows-container">
-    <div>
+<div class="goodness-grows-container">
+    <div class="goodness-grows-inner">
     <h1 style="color: white"><b class="text-success">G</b>oodness Grows Here</h1>
     <p class="text-light">We believe that local people making local cannabis products creates and spreads goodness for all. That’s why we offer only the freshest and highest-quality Massachusetts cannabis at our dispensary in Uxbridge.
 Shop our goodness online or in person with the help of our staff at our locally-owned Uxbridge recreational dispensary.</p>
@@ -46,6 +50,7 @@ Shop our goodness online or in person with the help of our staff at our locally-
 
 </div>
 
+<!-- Shop -->
 <div class="shop-container text-light">
 	<h1><b class="text-success">S</b>hop our Uxbridge Recreational Dispensary Menu</h1>
 <p>It’s easy to place an order for convenient pick up at our Uxbridge, MA dispensary. Browse our menu for a selection of cannabis flower, edibles, vape cartridges, concentrates, topicals, and more. to learn more about our product offerings.
@@ -60,14 +65,15 @@ We make it easy to order online and pick up in-store. You can also stop by our U
 <img class="shop-img" src="{% static 'store/media/topicals.jpeg' %}">
 <img class="shop-img" src="{% static 'store/media/vaporizers.jpeg' %}">
 <img class="shop-img" src="{% static 'store/media/tinctures.jpeg' %}">
-<img class="shop-img" style="width: 320px; height:170px;"src="{% static 'store/media/Group-41584.webp' %}">
+<img class="shop-img shop-img-chocolate" src="{% static 'store/media/Group-41584.webp' %}">
 
+<!-- Learn -->
 <div class="learn-container">
   <div>
     <img class="learn-img" src="{% static 'store/media/uxbridge-recreational-dispensary-4.jpg' %}">
   </div>
 
-  <div  style="margin-right: 25%;">
+  <div class="education-text-container" style="margin-right: 25%;">
 	  <h1 class="text-light"><b class="text-success">C</b>annabis Education</h1>
     <p class="text-light">Buying cannabis for the first time can be intimidating, but we make the process incredibly easy at our Uxbridge recreational dispensary.
 Our expert staff will answer your questions about cannabis and make sure you walk out of our dispensary with products you’re excited about.
@@ -77,6 +83,7 @@ Want to learn more about cannabis before you visit our dispensary in Uxbridge, M
   </div>
 </div>
 
+<!-- Map -->
 <div class="index-map-container">
   <div class="text-light">
 	  <h1><b class="text-success">C</b>ontact our Uxbridge Recreational Dispensary</h1>	
@@ -106,6 +113,7 @@ Uxbridge, MA 01569</a>
   </div>
 </div>
 
+<!-- Review Section -->
 <h1 class="review-header text-center"><b class="text-success fs-1">W</b>hat our customers are saying</h1>
 
 <!-- Carousel -->
@@ -171,6 +179,7 @@ Uxbridge, MA 01569</a>
   </button>
 </div>
 
+<!-- Footer -->
 {% include 'store/components/footer.html' %}
 
 {% endblock content %}

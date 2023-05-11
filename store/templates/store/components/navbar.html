@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i style="color: white;"class="fa fa-cannabis fa-4x"></i></a>
+		<a class="navbar-brand" href="{% url 'store:index' %}"><i style="color: white;"class="fa fa-cannabis fa-4x"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,7 +11,7 @@
 					Our Menu
 				</a>
 				<ul class="bg-black dropdown-menu">
-					<li><a class="text-light dropdown-item" href="#">All Products</a></li>
+					<li><a class="text-light dropdown-item" href="{% url 'store:dispensary-menu' %}">All Products</a></li>
 					<li><a class="text-light dropdown-item" href="#">Flower</a></li>
 					<li><a class="text-light dropdown-item" href="#">Pre-Rolls</a></li>
 					<li><a class="text-light dropdown-item" href="#">Vaporizers</a></li>
@@ -32,8 +32,13 @@
 				</ul>
 		</li>
 			<li class="nav-item">
-				<a class="fs-5 nav-link" href="#" role="button" aria-expanded="false">
+				<a class="fs-5 nav-link" href="{% url 'store:about' %}" role="button" aria-expanded="false">
 					About Us
+				</a>
+		</li>
+			<li class="nav-item">
+				<a class="fs-5 nav-link" href="#" role="button" aria-expanded="false">
+					<i class="fa fa-cart-shopping text-light"> <b class="text-success">0</b></i>
 				</a>
 		</li>
     </div>

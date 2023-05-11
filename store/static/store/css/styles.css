@@ -95,6 +95,14 @@
 	grid-template-columns: 3fr 2fr;
 }
 
+@media(max-width: 480px) {
+	.goodness-grows-container {
+		display: block;
+		text-align: center;
+	}
+
+}
+
 .shop-now-btn:hover {
 	background-color: white;
 	color: black;	
@@ -109,9 +117,22 @@
 	width: 75%;
 }
 
+@media (max-width: 480px) {
+	.goodness-grows-container p {
+		text-align: center;
+		width: 100%;
+	}
+}
+
 .goodness-img {
 	width: 100%;
 	height: auto;
+}
+
+@media (max-width: 480px) {
+	.goodness-img {
+		margin-top: 5%;
+	}
 }
 
 /* index-shop-container */
@@ -124,11 +145,44 @@
 	width: 325px;
 }
 
+.shop-img-chocolate {
+	width: 320px;
+	height: 172px;
+}
+
+@media (max-width: 480px) {
+	.shop-img-chocolate {
+		width: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	.shop-img {
+		display:block;
+		margin:0 auto;
+		width: 50%;
+	}
+}
+
 /* Learn */
 .learn-container {
 	margin-top: 20%;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
+}
+
+@media (max-width: 480px) {
+	.learn-container {
+		display: block;
+		margin: 10% auto;
+	}
+
+	.education-text-container {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .learn-img {
@@ -137,11 +191,29 @@
 	height: 45vw;
 }
 
+@media (max-width: 480px) {
+	.learn-img {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+		transform: rotate(0deg);
+		margin-bottom: 5%;
+	}
+}
+
 /* index-map */
 .index-map-container {
 	margin-top: 15%;
 	display: grid;
 	grid-template-columns: 3fr 3fr;
+}
+
+@media (max-width: 480px) {
+	.index-map-container {
+		display: block;
+		text-align: center;
+	}	
 }
 
 .hours-grid {
@@ -153,10 +225,17 @@
 .review-header {
 	margin-top: 10%;
 }
+
 .review-grid {
 	display: grid;
 	gap: 100px;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin:10% auto;
 	width: 80%;
+}
+
+@media (max-width: 480px) {
+	.review-grid {
+		display: block;
+	}
 }
