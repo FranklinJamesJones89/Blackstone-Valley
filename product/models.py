@@ -20,16 +20,16 @@ class Brand(models.Model):
     def __str__(self):
         return self.title
 
-class Flower(models.Model):
-    category = models.ForeignKey(Category, related_name='flowers', on_delete=models.CASCADE)
-    title = models.CharField(max_length=50)
+class Product(models.Model):
+    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     brand = models.ForeignKey(Brand, related_name='brands', on_delete=models.CASCADE)
+    title = models.CharField(max_length=50)
     description = models.TextField()
     eighth_price = models.IntegerField(blank=True, null=True)
     quarter_price = models.IntegerField(blank=True, null=True)
     half_price = models.IntegerField(blank=True, null=True)
     ounce_price = models.IntegerField(blank=True, null=True)
-    type = models.CharField(max_length=50)
+    kind = models.CharField(max_length=50)
     tac = models.FloatField(blank=True, null=True)
     thc = models.FloatField(blank=True, null=True)
     cbd = models.FloatField(blank=True, null=True)
@@ -37,6 +37,3 @@ class Flower(models.Model):
 
     def __str__(self):
         return self.title
-
-
-
