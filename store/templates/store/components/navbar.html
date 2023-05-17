@@ -12,14 +12,9 @@
 				</a>
 				<ul class="bg-black dropdown-menu">
 					<li><a class="text-light dropdown-item" href="{% url 'store:dispensary-menu' %}">All Products</a></li>
-					<li><a class="text-light dropdown-item" href="#">Flower</a></li>
-					<li><a class="text-light dropdown-item" href="#">Pre-Rolls</a></li>
-					<li><a class="text-light dropdown-item" href="#">Vaporizers</a></li>
-					<li><a class="text-light dropdown-item" href="#">Concentrates</a></li>
-					<li><a class="text-light dropdown-item" href="#">Edibles</a></li>
-					<li><a class="text-light dropdown-item" href="#">Tinctures</a></li>
-					<li><a class="text-light dropdown-item" href="#">Accessories</a></li>
-					<li><a class="text-light dropdown-item" href="#">Apparel</a></li>
+					{% for category in categories %}
+					<li><a class="text-light dropdown-item" href="#">{{ category }}</a></li>
+					{% endfor %}
 				</ul>
 		</li>
 			<li class="nav-item dropdown">

@@ -29,3 +29,10 @@ window.onload = function() {
 		restrict.css('display', 'block');
 	});
 };
+
+let currentTime = new Date();
+let hours = currentTime.getHours();
+let minutes = currentTime.getMinutes();
+let seconds = currentTime.getHours();
+
+let time = `${hours}:${minutes}`;
