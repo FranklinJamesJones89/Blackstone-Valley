@@ -30,9 +30,18 @@ window.onload = function() {
 	});
 };
 
-let currentTime = new Date();
-let hours = currentTime.getHours();
-let minutes = currentTime.getMinutes();
-let seconds = currentTime.getHours();
 
-let time = `${hours}:${minutes}`;
+
+let currentTime = new Date($.now());
+let targetTimeStart = new Date();
+targetTimeStart.setHours(10, 0, 0, 0);
+let targetTimeEnd = new Date();
+targetTimeEnd.setHours(20, 0, 0, 0);
+
+if (currentTime >= targetTimeStart && currentTime <= targetTimeEnd) {
+  $('.hours').css('color', 'green');
+} 
+else {
+	$('hours').css('color', 'red');
+}
+

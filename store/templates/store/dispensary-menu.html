@@ -1,4 +1,5 @@
 {% extends 'store/components/base.html' %}
+{% load static %}
 
 {% block title %} Dispensary-Menu {% endblock %}
 
@@ -53,15 +54,15 @@ No matter what, rest assured that you’re getting only the freshest cannabis pr
         <li class="nav-item">
           <a class="nav-link active text-light" aria-current="page" href="#">Specials</a>
         </li>
+        <li class="nav-item">
+		<a class="hours nav-link active" aria-current="page" href="#"><b>{{ business }}</b></a>
+        <li class="nav-item">
+		<a class="unstyled nav-link active text-light" aria-current="page" href="#">Recreational Menu</a>
+        </li>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="🔍 Search Blackstone Valley Cannabis" aria-label="Search">
       </form>
       </ul>
-        <li class="nav-item">
-		<a class="nav-link active text-light" aria-current="page" href="#"><b>{{ business }}</b> Ordering reopens at 9:30am | </a>
-        <li class="nav-item">
-		<a class="unstyled nav-link active text-light" aria-current="page" href="#">Recreational Menu</a>
-        </li>
     </div>
   </div>
 </nav>
@@ -90,6 +91,71 @@ No matter what, rest assured that you’re getting only the freshest cannabis pr
   </button>
 </div>
 </Section>
+
+<!-- Categories -->
+<h1 style="margin-top: 5%;"class="p-2 text-light">Categories--</h1>
+<Section>
+<div class="categories-grid bg-light">
+	<div class="">
+	  <p class="fw-bold p-2">Flower</p>
+	  <a href=""><img class="rounded" src="{% static 'store/media/flower.jpeg' %}" alt=""></a>
+	</div>
+
+	<div>
+	  <p class="fw-bold p-2">Pre-rolls</p>
+	  <a href=""><img class="rounded"src="{% static 'store/media/pre-rolls.jpeg' %}" alt=""></a>
+	</div>
+
+	<div>
+	  <p class="fw-bold p-2">Vaporizers</p>
+	  <a href=""><img class="rounded" src="{% static 'store/media/vaporizers.jpeg' %}" alt=""></a>
+	</div>
+
+	<div>
+	  <p class="fw-bold p-2">Concentrates</p>
+	  <a href=""><img class="rounded" src="{% static 'store/media/concentrates.jpeg' %}" alt=""></a>
+	</div>
+
+	<div>
+	  <p class="fw-bold p-2">Edibles</p>
+	  <a href=""><img class="rounded shop-img-chocolate"src="{% static 'store/media/Group-41584.webp' %}" alt=""></a>
+	</div>
+	
+	<div>
+	  <p class="fw-bold p-2">Tinctures</p>
+	  <a href=""><img class="rounded"src="{% static 'store/media/tinctures.jpeg' %}" alt=""></a>
+	</div>
+</div>
+</Section>
+
+<!-- $100 Half-Ounce -->
+<h1 style="margin-top: 5%;"class="p-2 text-light">$100 Half-Ounce--</h1>
+<Section>
+<div class="categories-grid bg-light p-2">
+	<div class="">
+	  <a href=""><img class="rounded" src="https://images.dutchie.com/dbfa596082bab7fd174d5ec80d4bbc4a?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
+	</div>
+
+	<div>
+	  <a href=""><img class="rounded"src="https://images.dutchie.com/258ec7d84c98b15f369bb5bcf5672c7e?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
+	</div>
+
+	<div>
+	  <a href=""><img class="rounded" src="https://images.dutchie.com/2299d749b45066c8fb2acb95cae1275d?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
+	</div>
+
+	<div>
+	  <a href=""><img class="rounded" src="https://images.dutchie.com/d353accb7122bee1560220132e579b99?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
+	</div>
+
+	<div>
+	  <p class="fw-bold p-2">Tinctures</p>
+	  <a href=""><img class="rounded"src="https://images.dutchie.com/1600e693ff3e9dc587f224e220783c9c?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
+	</div>
+</div>
+</Section>
+
+
 
 {% include 'store/components/footer.html' %}
 {% endblock content %}

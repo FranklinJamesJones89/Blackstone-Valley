@@ -11,7 +11,7 @@ def index(request):
 def dispensary_menu(request):
     current_time = datetime.datetime.now().time()
     
-    if current_time < datetime.time(20,0) and current_time > datetime.time(10,0):
+    if current_time < datetime.time(20,0) and current_time >= datetime.time(10,0):
         business = 'Open'
     else:
         business = 'Closed'
