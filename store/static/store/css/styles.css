@@ -150,6 +150,11 @@
 	height: 172px;
 }
 
+.apparel-img {
+	width:320px;
+	height: 172px;
+}
+
 @media (max-width: 480px) {
 	.shop-img-chocolate {
 		width: 200px;

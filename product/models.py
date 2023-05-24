@@ -21,7 +21,7 @@ class Brand(models.Model):
         return self.title
 
 class Product(models.Model):
-    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     brand = models.ForeignKey(Brand, related_name='brands', on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
     description = models.TextField()
@@ -34,6 +34,7 @@ class Product(models.Model):
     thc = models.FloatField(blank=True, null=True)
     cbd = models.FloatField(blank=True, null=True)
     slug = models.SlugField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title

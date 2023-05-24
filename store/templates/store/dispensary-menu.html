@@ -92,44 +92,22 @@ No matter what, rest assured that you’re getting only the freshest cannabis pr
 </div>
 </Section>
 
+
 <!-- Categories -->
 <h1 style="margin-top: 5%;"class="p-2 text-light">Categories--</h1>
 <Section>
 <div class="categories-grid bg-light">
-	<div class="">
-	  <p class="fw-bold p-2">Flower</p>
-	  <a href=""><img class="rounded" src="{% static 'store/media/flower.jpeg' %}" alt=""></a>
-	</div>
-
-	<div>
-	  <p class="fw-bold p-2">Pre-rolls</p>
-	  <a href=""><img class="rounded"src="{% static 'store/media/pre-rolls.jpeg' %}" alt=""></a>
-	</div>
-
-	<div>
-	  <p class="fw-bold p-2">Vaporizers</p>
-	  <a href=""><img class="rounded" src="{% static 'store/media/vaporizers.jpeg' %}" alt=""></a>
-	</div>
-
-	<div>
-	  <p class="fw-bold p-2">Concentrates</p>
-	  <a href=""><img class="rounded" src="{% static 'store/media/concentrates.jpeg' %}" alt=""></a>
-	</div>
-
-	<div>
-	  <p class="fw-bold p-2">Edibles</p>
-	  <a href=""><img class="rounded shop-img-chocolate"src="{% static 'store/media/Group-41584.webp' %}" alt=""></a>
-	</div>
-	
-	<div>
-	  <p class="fw-bold p-2">Tinctures</p>
-	  <a href=""><img class="rounded"src="{% static 'store/media/tinctures.jpeg' %}" alt=""></a>
-	</div>
+  {% for category in categories %}
+  <div class="">
+    <p class="fw-bold p-2">{{ category.title }}</p>
+    <a href="{% url 'store:category' category.id %}"><img class="rounded" src="{% static 'store/media/flower.jpeg' %}" alt=""></a>
+  </div>
+  {% endfor %}
 </div>
 </Section>
 
 <!-- $100 Half-Ounce -->
-<h1 style="margin-top: 5%;"class="p-2 text-light">$100 Half-Ounce--</h1>
+<!--<h1 style="margin-top: 5%;"class="p-2 text-light">$100 Half-Ounce--</h1>
 <Section>
 <div class="categories-grid bg-light p-2">
 	<div class="">
@@ -153,9 +131,7 @@ No matter what, rest assured that you’re getting only the freshest cannabis pr
 	  <a href=""><img class="rounded"src="https://images.dutchie.com/1600e693ff3e9dc587f224e220783c9c?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=175&w=175&q=75&dpr=1" alt=""></a>
 	</div>
 </div>
-</Section>
-
-
+</Section>-->
 
 {% include 'store/components/footer.html' %}
 {% endblock content %}

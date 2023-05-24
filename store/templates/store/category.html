@@ -1,0 +1,13 @@
+{% extends 'store/components/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<title>{% block title %}{{ category }}{% endblock %}</title>
+<h1>{{ category }}</h1>
+{% for products in product %}
+<h1>{{ products.title }}</h1>
+{% endfor %}
+
+{% endblock content %}
+
